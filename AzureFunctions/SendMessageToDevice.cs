@@ -28,11 +28,10 @@ namespace AzureFunctions
            
 
 
-            // QueryString 57.00
             string targetDeviceId = req.Query["targetdeviceid"];
             string message = req.Query["message"];
 
-            //Http Body 57.00
+            
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
 
             
